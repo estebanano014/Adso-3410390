@@ -1,5 +1,5 @@
 # ADSO 3410390
-![My picture](src/Imgs/profile.png)
+![My picture](SRC/Imgs/profile.png)
 ## Esteban Quiceno Duque
 ### Analisis y Desarrollo de Software
 ** Centro de Procesos Industriales y Construccion **
