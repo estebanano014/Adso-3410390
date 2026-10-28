@@ -1,10 +1,29 @@
 /* Google Fonts: Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Video de fondo */
+video.bg-video {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+
+/* Capa oscura sobre el video para que el texto se lea bien */
+body::before {
+    background: rgba(0, 0, 0, 0.45);
+    content: '';
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+}
 
 body {
     align-items: center;
-    background: linear-gradient(45deg, orchid, black);
+    
     color: #fff9;
     display: flex;
     font-family: Poppins, serif;
