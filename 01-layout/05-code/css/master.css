@@ -22,6 +22,7 @@ body {
     font-family: var(--font-body);
     margin: 0;
     padding: 0;
+    min-width: 1200px; /* diseño solo escritorio: no se adapta a pantallas pequeñas */
 }
  
 main {
@@ -40,6 +41,7 @@ main {
         position: fixed;
         top: 0;
         width: 100%;
+        min-width: 1200px;
         box-sizing: border-box;
         z-index: 100;
  
@@ -603,6 +605,9 @@ main {
             }
  
             button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 padding: 0 16px;
                 background-color: var(--color-flat);
                 border: none;
@@ -649,72 +654,5 @@ main {
         }
     }
  
-}
- 
-/* Responsive */
-@media (max-width: 900px) {
-    main {
-        section#about {
-            flex-direction: column;
-            text-align: center;
-            padding: 100px 0 0 0;
-            gap: 0;
- 
-            .about-content {
-                max-width: 100%;
-                padding-inline: 5%;
-                box-sizing: border-box;
- 
-                .hero-buttons {
-                    justify-content: center;
-                }
-            }
- 
-            .about-images {
-                width: 100%;
-                justify-content: center;
-                margin-top: 2rem;
- 
-                img.logo-full {
-                    width: 100%;
-                    height: auto;
-                    max-width: 100%;
-                }
-            }
-        }
- 
-        section#ofertas {
-            .ofertas-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1rem;
-            }
-        }
- 
-        section#beneficios .beneficios-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
- 
-        footer#footer .footer-grid {
-            grid-template-columns: 1fr 1fr;
-        }
- 
-        section#categorias {
-            .categorias-grid {
-                grid-template-columns: 1fr;
-            }
- 
-            .categoria-card {
-                min-height: 240px;
- 
-                .card-text {
-                    max-width: 50%;
-                }
- 
-                .card-img {
-                    max-width: 60%;
-                }
-            }
-        }
-    }
 }
  
